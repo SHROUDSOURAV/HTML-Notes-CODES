@@ -1,0 +1,48 @@
+<!DOCTYPE html><!--learning about classes(.) and ids(#) and also learning about iframes to add video or a short part of another website in our webpage (embedded link)
+please verify the iframe coding before addding the video or website through iframe for security precautions-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML ID and Frames</title>
+    <style>
+        /* needs to be written in dot .rad */
+        /* if dot isnt applied it will not connect with class attribute in the <p>paragraph tag */
+        /* the classes and ids used to target individual elements */
+        /* dot(.) = class  */
+        /* hash(#) = id */
+        .rad{
+            background-color:rgb(0, 0, 0);
+            color:aliceblue;
+        }
+        #rad{
+            background-color:aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <!-- adding the rad in paragraph <p> tag using the class attribute gives us the colors present in the .rad block in style tag ...part of css  -->
+    <h2>HEADING 1</h2>
+    <!-- here dot is a class which is used with the name .rad in styles tag as part of css to target an element specifically -->
+    <p class = "rad">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, repellat recusandae necessitatibus pariatur voluptatibus quasi impedit facere, accusantium corporis, tempore commodi quo et quaerat iusto sit adipisci animi ut quidem.</p>
+
+    <h2>HEADING3</h2>
+    <!-- here dot is a class which is used with the name .rad in styles tag as part of css to target an element specifically -->
+    <p class = "rad">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam eveniet tempora labore quam iure, numquam optio molestias facere et ad.</p>
+
+    <!-- here the # or id used to target a single element. the rad is id and present in styles tag as part of css. -->
+    <p id = rad>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex, rem quaerat sapiente praesentium veniam laborum facilis et ipsa minus repellat excepturi libero nobis nisi, officiis cupiditate voluptatibus consectetur similique quae quisquam! Dignissimos quam ex incidunt dolorem odit! Quae, ipsum doloremque?</p>
+
+
+    <p style = "text-align:center;
+    background-color: #313131;
+    color:white"
+    >VIDEO BELOW</p><br>
+    <!-- steps to get iframe of a video below... -->
+    <!-- step 1 => click share of a youtube video(decent one) -->
+    <!-- step 2 => click embed -->
+    <!-- step 3 => observe the embed video code then copy it-->
+    <!-- step 4 => paste the iframe code in your webpage and THATS IT!!!!... -->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/I7LrS1z_WNA?si=jfUL83KxTBPqRMWQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>

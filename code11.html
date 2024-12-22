@@ -1,0 +1,52 @@
+<!-- HTML's one of the most important parts ===> FORMS!!! -->
+<!-- Here we are going to learn about HTML Forms -->
+<!-- HTML Form using <form> tag -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <style>
+        body{
+            background-color:#414141;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- HTML Tag for form = <form> -->
+    <!-- forms allow us to enter data and send them for processing in server or backend-->
+    <!-- forms can contain various elements and in forms all the elements are submitted together and sent to backend -->
+    
+    <!-- action attribute in form specifies where to send the data when the form is submitted -->
+    <!-- there are 2 methods to submit a form ==> (a)GET (b)POST -->
+    <!-- in GET => data is sent in plaintext/not encrpted -->
+    <!-- in POST => data is sent encrpyted to server/backend-->
+    <h1>Forms in HTML</h1>
+    <form action="url" method="post" apply-charset="utf-8" enctype="application/x-www-form-urlencoded" autocomplete="off">
+        <!-- there are various input elements in form -->
+        <!-- to check the types => input: -->
+         <label for="fname">FIRST NAME</label>  <!--in some servers the placeholder is not displayed so for good practice the label should be used for assisting the user for input-->
+
+        <!-- for attribute in label => connected with the id in form tag ...upon clicking highlights the field within which input is expected from the user. -->
+         
+
+        <!-- the input element used for inputting data in form-->
+        <!-- the input type is text and placeholder to tell the user of the specific data he/she needs to enter -->
+        <input type="text" name="" id="fname" placeholder="first name"><br>
+        <label for="lname">LAST NAME</label>
+        <input type="text" name="" id="lname" placeholder="last name">
+        
+        <!--buttion element in form used to submit the data in the dserver/backend for processing  -->
+        <!-- keep type = "submit" in button tag/element -->
+        <!-- if the url/location is not proper in action attribute of form the data will not be properly sent -->
+        <button type="submit">PAY</button>
+    </form>
+</body>
+</html>
+
+
+<!-- inputs dont have closing tags -->
+<!-- buttons have closing tags -->
+<!-- what data should be entered in the input field can be specified to the user by using <label> tag or <placeholder> in <input> tag -->

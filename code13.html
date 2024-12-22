@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn HTML Forms, iframes, MEDIA </title>
+    <style>
+        body{
+            background-color:#414141;
+            text-align:center;
+        }
+        th,td{
+            border:1px solid black;
+        }
+        form{
+            text-align:center;
+            background-color:blueviolet;
+            border:1px solid white;
+            color:aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <p style = "background-color:aquamarine;
+    color:black;
+    text-align:center;
+    font-size:larger;"
+    ><b>INPUT FORM</b></p>
+    <form action = "url" method = "post">
+        <label for = "name"><b>NAME</b></label>
+        <input type = "text" id = "name" placeholder = "abclash"><br>
+
+        <label for = "passwd"><b>PASSWORD</b></label>
+        <input type = "password" id = "passwd" placeholder = "xxx-xxx-xxx"><br>
+
+        <button type = "submit"><b>SUBMIT</b></button>
+        <input type = "reset" value = "CLEAR">
+    </form>
+    <br>
+    <table style = "text-align:center;
+    background-color:aquamarine;
+    border:1px solid black;
+    font-size:large;">
+        <tr>
+            <th>NAME</th>
+            <th>COURSE</th>
+            <th>SECTION</th>
+        </tr>
+        <tr>
+            <td>a1</td>
+            <td>b1</td>
+            <td>c1</td>
+        </tr>
+        <tr>
+            <td>a2</td>
+            <td>b2</td>
+            <td>c</td>
+        </tr>
+        <tr>
+            <td>a2</td>
+            <td>b2</td>
+            <td>c2</td>
+        </tr>
+    </table>
+    <p style = "background-color:rgb(24, 180, 204);
+    color:aliceblue;"
+    ><b>END</b></p>
+    <img src = "https://images.unsplash.com/photo-1542397284385-6010376c5337?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt = "no image" width = "300px"><br><br>
+    <iframe width="400" height="315" src="https://www.youtube.com/embed/videoseries?si=WnVnuZG8D6mRh1WP&amp;list=PLu71SKxNbfoDBNF5s-WH6aLbthSEIMhMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br>
+
+    <!-- <video> tag to paste media inside html file in web -->
+    <!-- within  <video> tag there is <source> tag which specifies the location of the media file-->
+    <!-- below is an example of the implementation of the above mentioned tags -->
+
+    <!-- width = size of the video  -->
+    <!-- autoplay = upon opening the webpage the video will play automatically -->
+    <!-- controls = media file will have play,pause buttons -->
+    <!-- muted = the media file audio will be muted unless changed -->
+     <video width = "400" autoplay muted controls>
+
+        <!-- src attribute to specify the location/directory location of the media file -->
+        <!-- media file should be in current directory to avoid errors when deployed to web-->
+        <source src = "./Screen Recording 2024-12-22 005335.mp4">
+     
+    </video>
+</body>
+</html>

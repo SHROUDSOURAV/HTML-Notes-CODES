@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML TABLES</title>
+
+    <!-- targeting the table structure using css properties -->
+    <!-- to target the table structure using css use the structure name i.e table in this example -->
+    <!-- the css part can be written in html without linking external .css files. For that we need to write the css part within style tag -->
+    <style>
+        table{
+            width: 100%; /*width = size of the table structure*/
+            border-collapse:collapse;
+            text-align:center;  /*aligning texts of table in center*/
+        }
+        /* the border is to draw table borders and the black theme for better visuals */
+        td, th{     /*td = table data structure for css customization th = table heading structure for css curstomization*/
+            border: 1px solid black;
+            padding: 10px  
+        }
+        tr{ /*tr = table row for css customization*/
+            background-color:#313131;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <!-- shortcut of emmet to use tables in HTML below -->
+    <!-- table>tr>th*(n) ...n = number of headings required as per the user's desire/choice -->
+    <!-- 3 headings so 3 data entries i.e th = 3(cols) and td  = 3(data entries) -->
+
+<!-- 
+    <table>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <---here write tr>td*n ...n = number of data entries for the columns in the table
+    </table>
+-->
+    <p style = "
+    text-align:center;
+    ">Details of Students</p>
+    <table> <!--table tag-->
+        <tr>    <!--tr = table rows-->
+            <th>Name</th>   <!--th = table heading-->
+            <th>Department</th>
+            <th>Roll</th>
+            <tr>
+                <td>Sourav</td> <!--table data-->
+                <td>BCA</td>
+                <td>358</td>
+            <tr>
+                <td>Subhash</td> <!--table data-->
+                <td>Btech</td>
+                <td>320</td>
+            <tr>
+                <td>Soustav</td> <!--table data-->
+                <td>MBA</td>
+                <td>350</td>
+            <tr>
+                <td>Souvik</td> <!--table data-->
+                <td>MCA</td>
+                <td>346</td>
+            <tr>
+                <td>Sougata</td> <!--table data-->
+                <td>MTech</td>
+                <td>386</td>
+        </tr>
+    </table>
+</body>
+</html>

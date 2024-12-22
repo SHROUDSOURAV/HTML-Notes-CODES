@@ -1,0 +1,63 @@
+<!-- Here we going to learn various types of HTML <input> attributes in <form> tag -->
+<!-- the input tag is used to input data -->
+<!-- the types of input tag takes input in different ways into the input field -->
+<!-- input:password , input:date and time , input:reset , input:text -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:#414141;
+            color:white;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <form action = "url" method = "post">
+        <label for = "1">FIRST NAME</label>
+
+        <!-- since this input-text-button does not value attribute so upon using reset button the input box will go blank -->
+        <input type = "text" id = "1" placeholder = "first name"><br>
+        <label for = "2">SECOND NAME</label>
+       
+        <!--if value is present in input-text-button then upon resetting the value comes back  -->
+        <input type = "text" id = "2" placeholder = "second name" value = "sourav"><br>
+        <button type = "submit">SUBMIT</button>
+
+        <!-- the reset type input element/tag resets the value of the input box to its default value -->
+        <!-- the value attribute in reset button is for giving name to the input element -->
+        <input type = "reset" value = "CLEAR">
+
+
+        <!-- Below are other types of input attributes -->
+        <label for = "passwd">PASSWORD</label>
+        <input type="password" name="" id="passwd"><br>
+
+        <label>SELECT ADMISSION DATE</label>
+        <input type="date" name="" id=""><br>
+
+        <label>MALE</label>
+        <input type = "checkbox">
+        <label>FEMALE</label>
+        <input type = "checkbox"><br>
+
+        <label for = "e-mail">EMAIL</label>
+        <input type = "email" id = "e-mail" placeholder = "abc@gmail.com"><br>
+        <!-- select tag is used to create a dropdown menu from which the user can choose their desired option -->
+        <!-- the option tag helps the user to browse through the various options and choose their desired option -->
+        <select>
+            <option>BCA</option>
+            <option>MCA</option>
+        </select>
+    </form>
+</body>
+</html>
+
+
+<!-- inputs dont have closing tags -->
+<!-- buttons have closing tags -->
+<!-- what data should be entered in the input field can be specified to the user by using <label> tag or <placeholder> in <input> tag -->

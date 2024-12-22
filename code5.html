@@ -1,0 +1,43 @@
+<!-- learning more about <a> tag or Anchor tag and how to include images in HTML -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML anchor tags style tags css image tags </title>   <!--414141 is shade of grey for easier view of webcontent <= personal preference ONLY!!!-->
+    <style> 
+        body{
+            background-color:#414141; 
+            color:white
+        }
+    </style>
+</head>
+<body>
+    <!-- we are going to learn more about <a> tags below or anchor tags -->
+        <a href="http://google.com">GOOGLE</a>
+        <br>
+    <!-- within the href we have to write any name starting with # and in any of the paragraph tag we have to add an attribute called "id" 
+     then enter the name of the href name given in <a>anchor tag. the name in href should start with #. Upon clicking it, it will direct us to the location of the text or section within the webpage-->
+    <!-- the #(hashtag) is the shortcut for id -->
+
+    <a href = "#1a">Section II</a>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam perspiciatis consequuntur voluptas commodi, natus libero aut eius atque architecto itaque obcaecati possimus vero temporibus, sed magni labore similique sint mollitia ex? Alias dolorem molestiae ab accusamus dolores error inventore quidem placeat quae? Quasi fuga, cupiditate maxime adipisci saepe natus unde incidunt quibusdam aperiam? Inventore laudantium reprehenderit eum officiis ad vitae, voluptates fugiat distinctio, beatae maiores saepe asperiores quaerat non, a similique facere quis atque libero voluptatibus vero! Laudantium nostrum illo itaque, nam fuga modi neque blanditiis optio temporibus veniam, atque laborum, quo voluptate quisquam quae. Modi maxime assumenda inventore fuga numquam obcaecati at doloremque, cumque delectus ut nobis sunt laboriosam autem vitae quas veniam neque quibusdam repudiandae. Fugiat laborum voluptas rem aliquid explicabo, soluta deserunt eaque aspernatur. Enim ea consequuntur iusto, placeat corporis ratione odit quasi iure incidunt consequatur! Minima quisquam quo autem nam. Accusantium doloribus odio cum sapiente voluptatem atque blanditiis perferendis omnis provident neque, voluptas quo vel, quos ipsum sequi hic eligendi ipsam aliquam doloremque nobis? Ratione nam illo unde tempore autem velit dolores facere iusto? Tenetur ab consectetur sunt aliquam suscipit illo reiciendis porro. Sint similique reprehenderit cumque? Adipisci qui mollitia assumenda exercitationem necessitatibus consequuntur, nostrum sint dolore in repudiandae ullam expedita ipsam at nulla, rerum pariatur consequatur est voluptatem recusandae quo consectetur dolorum ea laudantium! Ipsa, harum ipsam! Quibusdam saepe quaerat nesciunt necessitatibus quas, officiis ipsum voluptas hic debitis nemo nihil dignissimos sunt totam magnam quae perspiciatis cumque quo vitae nostrum, doloribus iure provident. Repellat voluptatum id ratione voluptatem cum, qui porro quaerat dolor alias iusto ex maxime, neque repellendus itaque, similique consequatur dicta! Nemo repudiandae vel, deleniti qui, aliquam molestiae quibusdam ad blanditiis officiis harum rerum veniam debitis sint aperiam accusantium ratione officia voluptatem. Mollitia iste necessitatibus esse, tenetur repellendus laborum soluta non. Mollitia, esse!</p>
+
+<p id="1a">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi minima, labore nemo consectetur et doloremque, perferendis nesciunt adipisci enim excepturi porro harum cumque est quibusdam placeat ea eligendi in, fugiat aperiam necessitatibus fugit delectus rem! Consequuntur ipsum quam quae commodi natus temporibus velit error sed animi consequatur! Iure quis reprehenderit deserunt, eveniet, labore voluptatem qui itaque laborum dolore consectetur, similique maiores! Laudantium vero itaque laborum. Commodi quas nesciunt voluptatem beatae doloribus dolores est delectus amet enim impedit porro obcaecati, consequuntur iste consequatur animi quaerat veniam eos perspiciatis, labore officia itaque. Optio ex facilis, explicabo delectus fuga quam dolore quod magnam? Aspernatur, sint! Voluptatem cupiditate, blanditiis vero voluptatum maxime omnis, quibusdam ducimus natus asperiores culpa molestias delectus repellat esse at sint corporis eius. Nesciunt impedit praesentium provident animi voluptate repellendus ipsum ratione delectus. Nulla rerum officia soluta alias ducimus amet nostrum ea aut, illum laudantium ut blanditiis molestias natus. Veritatis similique illum mollitia cupiditate veniam expedita tempore, dolores earum non. Iure, commodi omnis in quaerat autem, cumque sequi ex fugit maiores eos recusandae assumenda dolores nobis optio? Labore, doloribus beatae. Fugit, ipsa explicabo molestias nulla vel rem. Iure, natus, adipisci perferendis repudiandae eos molestias hic error, neque in at commodi magni!</p>
+
+<!-- now we are going to learn how to include images in our html code using <img>tag and src attribute-->
+<!--src,alt,width are attributes of img tag-->
+<!-- src = contains link of the image -->
+<!-- alt = if there are issues while displaying the image or the image is not loading then an alternative text will be shown as a replacement for the image -->
+<!--width tag is used to resize the image as per user desire-->
+
+<!--the below image loaded from remote resource-->
+<img src="https://images.unsplash.com/photo-1506875644286-0fa3dc4df91f?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt = "no image" width = "400px"></img>
+
+<!--below I am going to load image from local resource -->
+<!-- ./ = current directory, ../ = previous directory ./(name...) = next directory
+ image directory locations are important because from that location only we are loading our image-->
+ <!-- another imp note!!! => avoid spaces of img filenames because in web servers it will cause errors or unecessary problems -->
+<img src = "./png-transparent-black-small-apple-logo-logo-material-apple-logo-black-thumbnail.png" alt = "LOL!!!"></img>
+</body>
+</html>

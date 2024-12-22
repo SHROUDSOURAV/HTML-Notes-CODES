@@ -1,0 +1,2 @@
+shift + alt + downward key = copy and paste line pointer by cursor currently
+ctrl + / = open html comment lines directly
